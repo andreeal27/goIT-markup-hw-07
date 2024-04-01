@@ -587,12 +587,10 @@ h2{
     display: flex;
     position: fixed;
     z-index: 1;
-    background-color: #ffffff;
 }
 .mobile-menu svg{
     width: 32px;
     height: 22px;
-    fill: var(--body-color);
 }
 .mobile-menu{
     border: none;
@@ -602,7 +600,7 @@ h2{
     display: none;
 }
 .js-menu-container{
-    height: 796px;
+    display: none;
 }
 .mobile-header{
     display: flex;
@@ -672,7 +670,7 @@ h2{
 @media screen and (min-width: 768px) {
     /* Adjustments for tablets - 768px width */
 
-    .js-menu-container{
+    .js-menu-container.is-open{
         display: none;
     } 
     .mobile-menu{
@@ -716,7 +714,7 @@ h2{
         background-image: linear-gradient(rgba(4, 47, 66, 0.7)),
         url("../images/people-office2.png");
     }
-    .js-menu-container{
+    .js-menu-container.is-open{
         display:none;
        }
        .nav-container{
